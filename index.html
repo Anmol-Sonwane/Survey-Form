@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+
+            body{
+                background-image: url(img/main-bg.jpg);
+                background-position: inherit;
+                background-size: cover;
+                font-family: sans-serif;
+                margin-top: 40px;
+            }
+            .form__container{
+                width: 800px;
+           
+                padding: 20px;
+                margin: auto;
+                background-color: rgba(216, 216, 216, 0.363);
+                border-radius: 10px;
+                margin-bottom: 30px;
+                box-shadow: 3px 3px 5px lighgray;
+            }
+
+            .name{
+                color:#fff;
+            }
+
+            .head{
+                text-align:center;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            .row{
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            .date{
+      
+                width:558px;
+            }
+            .input{
+                display:flex;
+              
+            }
+            select{
+                height: 40px;
+                padding: 10px;
+                width: 200px;
+            }
+            input{
+                width:100%;
+                height:40px;
+                padding:5px;
+            }
+
+            input[type=radio]{
+                width:60px;
+            }
+            label{
+               width:200px;
+           
+            }
+            .input__group{
+
+            margin-right: 40px;
+            }
+
+            .input__group>input{
+                margin-bottom: 3px;
+                
+            }
+
+            .radio__input{
+                display: flex;
+                color: #fff;
+                padding: 0px 50px;
+            
+                align-items: center;
+                width: 250px;
+            }
+            .btn{
+                color: white;
+                width:200px;
+                height: 35px;
+            padding: 10px;  
+            margin: auto;
+            background-color: rgba(0, 255, 255, 0.349);
+            outline: none;
+            border: 0;
+            display: block;
+            margin: auto;
+        }
+
+        small{
+            color: white;
+        }
+textarea{
+        width: 553px;
+    height: 149px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="form__container">
+            <h3 class="name head">Survey form</h3>
+            <form action="">
+                <div class="row">
+                    <label class="name">Name</label>
+                    <div class="input">
+                        <div class="input__group">
+                            <input type="text">
+                           <small>First Name</small>
+                        </div>
+                        <div class="input__group">
+                            <input type="text">
+                             <small>Last Name</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="name" for="dob">Date of Birth</label>
+                    <input type="date" class="date">
+                </div>
+
+                <div class="row">
+                    <label class="name" for="blood">Blood Group</label>
+                    <select name="" id="">
+                        <option >--select your type--</option>
+                        <option value="o+"> O+</option>
+                        <option value="o-"> O-</option>
+                        <option value="a+"> A+</option>
+                        <option value="a-"> A-</option>
+                        <option value="b+"> B+</option>
+                        <option value="b-"> B+</option>
+                        <option value="ab+"> AB+</option>
+                        <option value="ab-"> AB-</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="name">Gender</label>
+                    <div class="radio__input">
+                        <input type="radio" name="sex" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex" id="others">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="name">
+                    Countries Visited
+                    </label>
+                 <select name="" id="">
+                        <option >--select countries--</option>
+                        <option value="o+"> Japan</option>
+                        <option value="o-">South Korea</option>
+                        <option value="a+"> China</option>
+                        <option value="a-"> USA</option>
+                        <option value="b+"> Russia</option>
+                        <option value="b-"> South Africa</option>
+                        <option value="ab+"> Australia</option>
+                        <option value="ab-"> Nepal</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="name">Tell me about yourself</label>
+                    <textarea></textarea>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </body>
